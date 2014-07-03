@@ -11,40 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-Linux
-=====
 
-.. toctree::
-    :maxdepth: 2
-
-    linux/ubuntu
-
-Editors
-=======
-
-.. toctree::
-    :maxdepth: 2
-
-    editors/vim
-    editors/emacs
-    editors/sublime
-
-Verilog
-=======
-.. toctree::
-    :maxdepth: 2
-
-Python
-======
-.. toctree::
-    :maxdepth: 2
-
-    python/sphinx
-    python/django
-
-    web/html
-    web/css
-    web/javascript
 
 Indices and tables
 ==================
