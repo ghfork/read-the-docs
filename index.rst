@@ -16,6 +16,7 @@ Vim
 
 .. toctree::
     :maxdepth: 2
+
     vim/first
 
 Indices and tables
