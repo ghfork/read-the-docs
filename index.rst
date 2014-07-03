@@ -11,7 +11,12 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+Vim
+===
 
+.. toctree::
+    :maxdepth: 1
+    vim/first
 
 Indices and tables
 ==================
