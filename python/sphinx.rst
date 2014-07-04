@@ -6,6 +6,12 @@ sphinx
 reStructured
 ============
 
+inline ''code''
+
+\''code''
+
+Build a code block
+
 ::
 
     ::
