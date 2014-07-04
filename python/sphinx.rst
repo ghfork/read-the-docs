@@ -2,20 +2,33 @@
 sphinx
 ######
 
-============
+************
 reStructured
-============
+************
 
-inline ''code''
+Sections
 
-\''code''
+* # with overline, for parts
+* * with overline, for chapters
+* =, for sections
+* -, for subsections
+* ^, for subsubsections
+* ", for paragraphs
 
-Build a code block
+
+
+Use``code``(with space before and after backticks) to show inline code
+
+Inline ``code`` like this.
+
+Build a code block:
 
 ::
 
     ::
     .. highlight:
+        CODE Here
+        ...
     
 
 
