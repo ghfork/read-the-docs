@@ -12,7 +12,7 @@ Contents:
    :maxdepth: 2
 
 Music
-#####
+=====
 
 .. toctree::
     :maxdepth: 2
@@ -56,7 +56,15 @@ Python
 
     web/html
     web/css
-    web/javascript
+
+Javascript
+==========
+.. toctree::
+    :maxdepth: 2
+
+    javascript/javascript
+    javascript/javascript
+
 
 Tools
 =====
