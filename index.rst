@@ -39,8 +39,11 @@ Editors
 
 Verilog
 =======
+
 .. toctree::
     :maxdepth: 2
+
+    verilog/verilog
 
 Python
 ======
