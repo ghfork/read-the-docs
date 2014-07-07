@@ -2,6 +2,8 @@
 Music
 =====
 
+.. csv-table:: Music
+    :file: musics.csv
 
 Electronic
 ==========
