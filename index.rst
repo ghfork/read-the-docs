@@ -33,6 +33,7 @@ Editors
 .. toctree::
     :maxdepth: 2
 
+    vim/vim
     editors/vim
     editors/emacs
     editors/sublime
