@@ -1,8 +1,10 @@
 
-Samba Setting
-=============
+Samba Settings
+==============
 
 需安裝以下：
+
+.. highlight:: bash
 
 ::
 
@@ -20,7 +22,7 @@ Samba Setting
 
 ::
 
-    //172.17.0.9/yl.li  /home/yilin/smb cifs    uid=1000,credentials=/root/.samba_credentials,iocharset=utf8,sec=ntlmv2,_netdev,nounix   0   0
+    //xxx.xxx.xxx.xxx/share  /mnt/mount_point cifs    uid=1000,credentials=/somewhere/.credentials,iocharset=utf8,sec=ntlmv2,_netdev,nounix   0   0
 
 
 ps: if plaintext, use sec=lanman.
