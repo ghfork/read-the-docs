@@ -17,7 +17,7 @@ Music
 .. toctree::
     :maxdepth: 2
 
-    music/top
+    music/music
 
 Linux
 =====
@@ -53,6 +53,14 @@ Python
     web/html
     web/css
     web/javascript
+
+Tools
+=====
+
+.. toctree::
+    :maxdepth: 2
+
+    tools/tools
 
 Indices and tables
 ==================
