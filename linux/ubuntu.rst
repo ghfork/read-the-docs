@@ -12,15 +12,15 @@ Samba Settings
 
 ::
 
-    sudo apt-get install samba
-    sudo apt-get install cifs-utils
+    $ sudo apt-get install samba
+    $ sudo apt-get install cifs-utils
 
 手動連線或 mount 的方法：
 
 ::
     
-    smbclient //xxx.xxx.xxx.xxx/share -U name
-    sudo mount -t //xxx.xxx.xxx.xxx/share /mnt/mount_point -o username=name,workgroup=group,sec=ntlmv2
+    $ smbclient //xxx.xxx.xxx.xxx/share -U name
+    $ sudo mount -t //xxx.xxx.xxx.xxx/share /mnt/mount_point -o username=name,workgroup=group,sec=ntlmv2
 
 開機自動 mount 的方法，在 /etc/fstab 裡加上：
 
@@ -48,7 +48,7 @@ Also, execute this line
 
 ::
 
-    sudo sh -c "echo 0x30 > /proc/fs/cifs/SecurityFlags"
+    $ sudo sh -c "echo 0x30 > /proc/fs/cifs/SecurityFlags"
 
 SSH Tunnel
 ==========
