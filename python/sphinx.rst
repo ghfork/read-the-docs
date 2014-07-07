@@ -5,6 +5,11 @@ Sphinx
 reStructured
 ============
 
+Use `toctree` to build the tree structure::
+
+    .. toctree::
+        :maxdepth: 2
+
 Sections
 
 * # with overline, for parts

@@ -49,8 +49,8 @@ Python
 ======
 .. toctree::
     :maxdepth: 2
-
-    python/sphinx
+    
+    python/python
     python/django
 
     web/html
