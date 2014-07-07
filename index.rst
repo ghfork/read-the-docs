@@ -12,12 +12,12 @@ Contents:
    :maxdepth: 2
 
 Music
-#####
+=====
 
 .. toctree::
     :maxdepth: 2
 
-    music/top
+    music/music
 
 Linux
 =====
@@ -33,22 +33,26 @@ Editors
 .. toctree::
     :maxdepth: 2
 
+    vim/vim
     editors/vim
     editors/emacs
     editors/sublime
 
 Verilog
 =======
+
 .. toctree::
     :maxdepth: 2
+
+    verilog/verilog
 
 Python
 ======
 
 .. toctree::
     :maxdepth: 2
-
-    python/sphinx
+    
+    python/python
     python/django
 
 Javascript
@@ -60,6 +64,15 @@ Javascript
     web/html
     web/css
     javascript/javascript
+
+
+Tools
+=====
+
+.. toctree::
+    :maxdepth: 2
+
+    tools/tools
 
 Indices and tables
 ==================

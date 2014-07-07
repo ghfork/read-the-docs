@@ -1,10 +1,20 @@
-######
-sphinx
-######
+======
+Sphinx
+======
 
-************
+
+.. code-block:: bash
+
+    $ sudo apt-get install python
+    $ sudo apt-get install python-sphinx
+
 reStructured
-************
+============
+
+Use ``toctree`` to build the tree structure::
+
+    .. toctree::
+        :maxdepth: 2
 
 Sections
 
@@ -25,8 +35,9 @@ Build a code block:
 
 ::
 
+    .. highlight:: c
+
     ::
-    .. highlight:
         CODE Here
         ...
     
