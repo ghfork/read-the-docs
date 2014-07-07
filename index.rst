@@ -44,15 +44,22 @@ Verilog
 
 Python
 ======
+
 .. toctree::
     :maxdepth: 2
 
     python/sphinx
     python/django
 
+Javascript
+==========
+
+.. toctree::
+    :maxdepth: 2
+
     web/html
     web/css
-    web/javascript
+    javascript/javascript
 
 Indices and tables
 ==================

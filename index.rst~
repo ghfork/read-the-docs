@@ -18,7 +18,6 @@ Music
     :maxdepth: 2
 
     music/top
-    music/music
 
 Linux
 =====

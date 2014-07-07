@@ -1,0 +1,8 @@
+
+.. _javascript
+
+Javascript
+==========
+
+::
+    console.log("message");
