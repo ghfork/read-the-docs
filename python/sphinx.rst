@@ -25,8 +25,9 @@ Build a code block:
 
 ::
 
-    ::
     .. highlight:: c
+
+    ::
         CODE Here
         ...
     
