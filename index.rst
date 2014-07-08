@@ -79,6 +79,7 @@ Windows
 
 .. toctree::
     :maxdepth:2
+
     windows/windows
 
 Indices and tables
