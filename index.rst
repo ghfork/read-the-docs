@@ -77,7 +77,7 @@ Tools
 Windows
 =======
 
-..toctree::
+.. toctree::
     :maxdepth:2
     windows/windows
 
