@@ -16,7 +16,6 @@ Javascript
     </head>
 
 
-====
 HTML
 ====
 
@@ -26,7 +25,6 @@ HTML
     <html>
     </html>
 
-=======
 Node.js
 =======
 
