@@ -29,7 +29,7 @@ Samba Settings
     //xxx.xxx.xxx.xxx/share  /mnt/mount_point cifs    uid=1000,credentials=/somewhere/.credentials,iocharset=utf8,sec=ntlmv2,_netdev,nounix   0   0
 
 
-ps: if plaintext, use sec=lanman.
+ps: if plaintext, use ``sec=lanman`` .
 
 In /etc/samba/s
 
@@ -42,13 +42,40 @@ In /etc/samba/s
        client ntlmv2 auth = no
        security = user
 
-
-
 Also, execute this line
 
 ::
 
     $ sudo sh -c "echo 0x30 > /proc/fs/cifs/SecurityFlags"
 
+
+git
+===
+
+Simple work flow::
+
+    git init
+    git add .
+    git commit
+    git remote add origin https://xxx/xxx.git
+    git push -u origin master
+
+Show config::
+
+    git config -l
+
+Switch protocol::
+
+    git config remote.origin.url git@github.com:xxxx/xxxx
+
+
+Add new repository::
+
+    git remote add 'custom_name' https://xxx/xxx.git
+    git push -u origin --all
+    git push -u origin --tags
+    git remote -v # verify new remote repository
+
 SSH Tunnel
 ==========
+

@@ -31,17 +31,20 @@ Use``code``(with space before and after backticks) to show inline code
 
 Inline ``code`` like this.
 
-Build a code block:
-
-::
+Build a code block::
 
     .. highlight:: c
 
     ::
         CODE Here
         ...
-    
 
+Inline link::
+
+    Inline link like this `custom text <http://xxx.com/>`_ .
+
+    It can also use reference style `a link`_.
+    .. _a link: http://xxx.com/
 
 http://www.openfoundry.org/tw/foss-programs/9018-sphinx-restructuredtext-
 

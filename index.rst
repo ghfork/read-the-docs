@@ -27,16 +27,6 @@ Linux
 
     linux/ubuntu
 
-Editors
-=======
-
-.. toctree::
-    :maxdepth: 2
-
-    vim/vim
-    editors/vim
-    editors/emacs
-    editors/sublime
 
 Verilog
 =======
@@ -65,6 +55,24 @@ Javascript
     web/css
     javascript/javascript
 
+Editors
+=======
+
+.. toctree::
+    :maxdepth: 2
+
+    vim/vim
+    editors/vim
+    editors/emacs
+    editors/sublime
+
+Windows
+=======
+
+.. toctree::
+    :maxdepth:2
+
+    windows/windows
 
 Tools
 =====
@@ -74,13 +82,13 @@ Tools
 
     tools/tools
 
-Windows
-=======
+Resources
+=========
 
 .. toctree::
     :maxdepth:2
 
-    windows/windows
+    resources/resources
 
 Indices and tables
 ==================
