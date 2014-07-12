@@ -11,13 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-Music
-=====
 
-.. toctree::
-    :maxdepth: 2
-
-    music/music
 
 Linux
 =====
