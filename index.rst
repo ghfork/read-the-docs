@@ -12,26 +12,16 @@ Contents:
    :maxdepth: 2
 
 
-
-Linux
-=====
-
 .. toctree::
     :maxdepth: 2
 
     linux/ubuntu
 
 
-Verilog
-=======
-
 .. toctree::
     :maxdepth: 2
 
     verilog/verilog
-
-Python
-======
 
 .. toctree::
     :maxdepth: 2
@@ -39,8 +29,6 @@ Python
     python/python
     python/django
 
-Javascript
-==========
 
 .. toctree::
     :maxdepth: 2
@@ -48,9 +36,6 @@ Javascript
     web/html
     web/css
     javascript/javascript
-
-Editors
-=======
 
 .. toctree::
     :maxdepth: 2
@@ -60,24 +45,15 @@ Editors
     editors/emacs
     editors/sublime
 
-Windows
-=======
-
 .. toctree::
     :maxdepth:2
 
     windows/windows
 
-Tools
-=====
-
 .. toctree::
     :maxdepth: 2
 
     tools/tools
-
-Resources
-=========
 
 .. toctree::
     :maxdepth:2
