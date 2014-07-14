@@ -2,6 +2,15 @@
 Ubuntu
 ======
 
+Useful Tips
+===========
+
+System Information:
+
+.. highlight:: bash
+
+    uname -a
+    cat /etc/system-release
 
 Samba Settings
 ==============
@@ -75,6 +84,10 @@ Add new repository::
     git push -u origin --all
     git push -u origin --tags
     git remote -v # verify new remote repository
+
+Change remote url::
+    
+    git remote set-url 'name' 'url'
 
 SSH Tunnel
 ==========
