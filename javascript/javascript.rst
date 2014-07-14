@@ -8,6 +8,7 @@ Javascript
 
     console.log("message");
     typeof something;
+    something.hasOwnProperty();
 
 .. code-block:: JavaScript
 
@@ -15,6 +16,19 @@ Javascript
         <script type="text/javascript" src="script.js"></script>
     </head>
 
+Create Object:
+.. code-block:: JavaScript
+    
+    function SomeObject () {
+    
+    };
+
+Create function for all objects:
+.. code-block:: JavaScript
+    
+    object.prototype.func = fuction() {
+    
+    };
 
 HTML
 ====
