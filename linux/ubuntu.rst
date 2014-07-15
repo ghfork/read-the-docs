@@ -7,7 +7,7 @@ Useful Tips
 
 System Information:
 
-.. highlight:: bash
+.. code-block:: bash
 
     uname -a
     cat /etc/system-release
