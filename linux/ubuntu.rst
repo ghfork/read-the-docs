@@ -92,3 +92,7 @@ Change remote url::
 SSH Tunnel
 ==========
 
+Useful Packages
+===============
+
+    alarm-clock-applet
