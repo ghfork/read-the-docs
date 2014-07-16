@@ -11,6 +11,7 @@ System Information:
 
     uname -a
     cat /etc/system-release
+    lshw
 
 Samba Settings
 ==============
@@ -95,4 +96,4 @@ SSH Tunnel
 Useful Packages
 ===============
 
-    alarm-clock-applet
+    sudo apt-get install alarm-clock-applet guake

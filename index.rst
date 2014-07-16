@@ -16,48 +16,18 @@ Contents:
     :maxdepth: 2
 
     linux/ubuntu
-
-
-.. toctree::
-    :maxdepth: 2
-
     verilog/verilog
-
-.. toctree::
-    :maxdepth: 2
-    
     python/python
     python/django
-
-
-.. toctree::
-    :maxdepth: 2
-
     web/html
     web/css
     javascript/javascript
-
-.. toctree::
-    :maxdepth: 2
-
     vim/vim
     editors/vim
     editors/emacs
     editors/sublime
-
-.. toctree::
-    :maxdepth:2
-
     windows/windows
-
-.. toctree::
-    :maxdepth: 2
-
     tools/tools
-
-.. toctree::
-    :maxdepth:2
-
     resources/resources
 
 Indices and tables
