@@ -2,16 +2,6 @@
 Ubuntu
 ======
 
-Bash Tips
-=========
-
-System Information:
-
-.. code-block:: bash
-
-    uname -a
-    cat /etc/system-release
-    lshw
 
 Samba Settings
 ==============
@@ -57,7 +47,7 @@ Also, execute this line
     $ sudo sh -c "echo 0x30 > /proc/fs/cifs/SecurityFlags"
 
 
-git
+Git
 ===
 
 Simple work flow::
@@ -101,8 +91,30 @@ Add multiple remote push::
 SSH Tunnel
 ==========
 
+Bash Tips
+=========
+
+System Information:
+
+.. code-block:: bash
+
+    uname -a
+    cat /etc/system-release
+    lshw
+
 Useful Packages
 ===============
 
-    sudo apt-get install alarm-clock-applet guake tree fonts-wqy-zenhei
+alarm-clock-applet
+    倒數計時器
+
+guake
+    掛在螢幕上方的 Terminal
+
+tree
+    樹狀顯示資料夾
+
+fonts-wqy-zenhei
+    中文字型
+
 
