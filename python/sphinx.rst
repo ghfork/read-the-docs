@@ -18,12 +18,12 @@ Use ``toctree`` to build the tree structure::
 
 Sections
 
-* # with overline, for parts
-* \* with overline, for chapters
-* =, for sections
-* -, for subsections
-* ^, for subsubsections
-* ", for paragraphs
+* ``#`` with overline, for parts
+* ``*`` with overline, for chapters
+* ``=`` for sections
+* ``-`` for subsections
+* ``^`` for subsubsections
+* ``"`` for paragraphs
 
 
 

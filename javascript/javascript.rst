@@ -16,7 +16,7 @@ JavaScript
     typeof something;
     something.hasOwnProperty();
 
-.. code-block:: javascript
+.. code-block:: html
 
     <head>
         <script type="text/javascript" src="script.js"></script>
@@ -34,7 +34,7 @@ Create function for all objects:
 
 .. code-block:: javascript
     
-    object.prototype.func = fuction() {
+    object.prototype.func = function() {
     
     };
 

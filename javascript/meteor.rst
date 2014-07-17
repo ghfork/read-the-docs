@@ -2,6 +2,9 @@
 Meteor
 ======
 
+General Usage
+-------------
+
 Template
 
 .. code-block:: javascript
