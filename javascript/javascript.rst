@@ -10,7 +10,7 @@ Javascript
 
     meteor.rst
 
-.. code-block:: javaScript
+.. code-block:: javascript
 
     console.log("message");
     typeof something;
