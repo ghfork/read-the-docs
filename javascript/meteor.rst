@@ -4,7 +4,7 @@ Meteor
 
 Template
 
-.. code-block:: Javascipt
+.. code-block:: javascript
 
     <!-- in myapp.html -->
     <body>
@@ -32,7 +32,7 @@ Template
 
 Use {{#each}} to iterate array or database
 
-.. code-block:: Javascipt
+.. code-block:: javascript
 
     <!-- in myapp.html -->
     <template name="players">
@@ -48,7 +48,7 @@ Use {{#each}} to iterate array or database
 
 Helpers with arguments
 
-.. code-block:: Javascipt
+.. code-block:: javascript
 
     // in a JavaScript file
     Template.players.leagueIs = function (league) {
@@ -69,14 +69,14 @@ Helpers with arguments
 
 Helpers pass constant data.
 
-.. code-block:: Javascipt
+.. code-block:: javascript
 
     // Works fine with {{#each sections}}
     Template.report.sections = ["Situation", "Complication", "Resolution"];
 
 Evnets
 
-.. code-block:: Javascipt
+.. code-block:: html
 
     <!-- myapp.html -->
     <template name="scores">
@@ -100,7 +100,7 @@ Evnets
 
 Namespacing
 
-.. code-block:: Javascipt
+.. code-block:: javascript
 
     // File Scope. This variable will be visible only inside this
     // one file. Other files in this app or package won't see it.
@@ -116,7 +116,7 @@ API
 
 Meteor.startup:
 
-.. code-block:: Javascipt
+.. code-block:: javascript
 
     // On server startup, if the database is empty, create some initial data.
     if (Meteor.isServer) {

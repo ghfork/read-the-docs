@@ -1,7 +1,7 @@
 .. _javascript
 
 ==========
-Javascript
+JavaScript
 ==========
 
 
@@ -16,7 +16,7 @@ Javascript
     typeof something;
     something.hasOwnProperty();
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
     <head>
         <script type="text/javascript" src="script.js"></script>
@@ -24,7 +24,7 @@ Javascript
 
 Create Object:
 
-.. code-block:: JavaScript
+.. code-block:: javascript
     
     function SomeObject () {
     
@@ -32,7 +32,7 @@ Create Object:
 
 Create function for all objects:
 
-.. code-block:: JavaScript
+.. code-block:: javascript
     
     object.prototype.func = fuction() {
     
@@ -41,7 +41,7 @@ Create function for all objects:
 HTML
 ====
 
-.. code-block:: HTML
+.. code-block:: html
 
     <!DOCTYPE html>
     <html>
@@ -50,7 +50,7 @@ HTML
 Node.js
 =======
 
-.. code-block:: Javascipt
+.. code-block:: javascript
 
     var http = require("http");
     
