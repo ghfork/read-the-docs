@@ -7,7 +7,7 @@ General Usage
 
 Template
 
-.. code-block:: javascript
+.. code-block:: html
 
     <!-- in myapp.html -->
     <body>
@@ -35,7 +35,7 @@ Template
 
 Use {{#each}} to iterate array or database
 
-.. code-block:: javascript
+.. code-block:: html
 
     <!-- in myapp.html -->
     <template name="players">
@@ -51,7 +51,7 @@ Use {{#each}} to iterate array or database
 
 Helpers with arguments
 
-.. code-block:: javascript
+.. code-block:: html
 
     // in a JavaScript file
     Template.players.leagueIs = function (league) {
@@ -72,7 +72,7 @@ Helpers with arguments
 
 Helpers pass constant data.
 
-.. code-block:: javascript
+.. code-block:: html
 
     // Works fine with {{#each sections}}
     Template.report.sections = ["Situation", "Complication", "Resolution"];
@@ -129,6 +129,30 @@ Meteor.startup:
         }
       });
     }
+
+Publish & Subscribe:
+
+http://docs.meteor.com/#publishandsubscribe
+
+Collections:
+
+.. code-block:: javascript
+
+    // common code on client and server declares livedata-managed mongo
+    // collection.
+    Chatrooms = new Meteor.Collection("chatrooms");
+    Messages = new Meteor.Collection("messages");
+
+.. code-block:: javascript
+
+    // return array of my messages
+    var myMessages = Messages.find({userId: Session.get('myUserId')}).fetch();
+
+    // create a new message
+    Messages.insert({text: "Hello, world!"});
+
+    // mark my first message as "important"
+    Messages.update(myMessages[0]._id, {$set: {important: true}});
 
 References
 ----------
