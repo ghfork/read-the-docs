@@ -4,6 +4,12 @@
 Javascript
 ==========
 
+
+.. toctree::
+    :maxdepth: 2
+
+    meteor.rst
+
 .. code-block:: JavaScript
 
     console.log("message");
@@ -17,6 +23,7 @@ Javascript
     </head>
 
 Create Object:
+
 .. code-block:: JavaScript
     
     function SomeObject () {
@@ -24,6 +31,7 @@ Create Object:
     };
 
 Create function for all objects:
+
 .. code-block:: JavaScript
     
     object.prototype.func = fuction() {
@@ -54,3 +62,6 @@ Node.js
 
 
 http://www.nodebeginner.org/
+
+
+
