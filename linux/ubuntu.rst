@@ -52,6 +52,8 @@ Git
 
 Simple work flow::
 
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
     git init
     git add .
     git commit
@@ -88,6 +90,10 @@ Add multiple remote push::
         url = git@github.com:xxx.git
         url = git@codaset.com:xxx.git
 
+Create central repository::
+
+    git init --bare <directory> # create central repository
+
 SSH Tunnel
 ==========
 
@@ -102,6 +108,28 @@ System Information:
     cat /etc/system-release
     lshw
 
+top
+---
+
+``i`` show/disable idle
+``c`` command line
+``f`` fileds
+``0`` zero-suppress
+``V`` forest-view-mode
+
+``P`` sort with CPU usage
+``T`` sort with Time
+``M`` sort with Memory usage
+``L`` search
+``&`` find next
+
+Filter
+
+``o`` Other-Filter (ignore case)
+``O`` Case sensitive
+
+ex: COMMAND=simv
+
 Useful Packages
 ===============
 
@@ -112,6 +140,9 @@ python-pip
 
 Utils
 -----
+
+qalculate
+    圖形化界面計算機
 
 alarm-clock-applet
     倒數計時器

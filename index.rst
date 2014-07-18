@@ -19,8 +19,7 @@ Contents:
     web/css
     javascript/javascript
     vim/vim
-    editors/vim
-    editors/emacs
+    emacs/emacs
     editors/sublime
     windows/windows
     tools/tools
