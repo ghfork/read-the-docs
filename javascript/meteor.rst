@@ -206,6 +206,25 @@ Create ``Dependency`` object.
     Template.weather.forecast = function () {
       return forecasts.get("san-francisco");
     };
+    
+.. code-block:: javascript
+
+    var forecasts = new ReactiveDict;
+    forecasts.set("Chicago", "cloudy");
+    forecasts.set("Tokyo", "sunny");
+    
+    var settings = new ReactiveDict;
+    settings.set("city", "Chicago");
+    
+    $('body').html("The weather in <span class='city'></span> is <span class='weather'></span>.");
+    Deps.autorun(function () {
+      console.log("Updating");
+      var currentCity = settings.get('city');
+      $('.city').text(currentCity);
+      $('.weather').text(forecasts.get(currentCity).toUpperCase());
+    });
+    // Prints "Updating"
+    // Page now says "The weather in Chicago is CLOUDY."
 
 References
 ----------
