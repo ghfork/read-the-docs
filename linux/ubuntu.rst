@@ -105,6 +105,14 @@ System Information:
 Useful Packages
 ===============
 
+Programming
+-----------
+
+python-pip
+
+Utils
+-----
+
 alarm-clock-applet
     倒數計時器
 
@@ -116,5 +124,8 @@ tree
 
 fonts-wqy-zenhei
     中文字型
+
+htop
+    一個比較好用的 top !
 
 

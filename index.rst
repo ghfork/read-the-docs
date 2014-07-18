@@ -3,14 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ReadTheDocs's documentation!
+Welcome to Revetice's documentation!
 =======================================
 
 Contents:
-
-.. toctree::
-   :maxdepth: 2
-
 
 .. toctree::
     :maxdepth: 2
@@ -30,10 +26,9 @@ Contents:
     tools/tools
     resources/resources
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. Indices and tables
+   ==================
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`
 
