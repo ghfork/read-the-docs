@@ -1,4 +1,4 @@
-
+======
 Meteor
 ======
 
@@ -154,7 +154,71 @@ Collections:
     // mark my first message as "important"
     Messages.update(myMessages[0]._id, {$set: {important: true}});
 
+Deps
+----
+
+Create ``Dependency`` object.
+
+.. code-block:: javascript
+
+    var favoriteFood = "apples";
+    var favoriteFoodDep = new Deps.Dependency;
+
+    var getFavoriteFood = function () {
+      favoriteFoodDep.depend();
+      return favoriteFood;
+    };
+
+    var setFavoriteFood = function (newValue) {
+      favoriteFood = newValue;
+      favoriteFoodDep.changed();
+    };
+
+    getFavoriteFood();
+    // "apples"
+
+``Deps.autorun`` .
+
+.. code-block:: javascript
+
+    var handle = Deps.autorun(function () {
+      console.log("Your favorite food is " + getFavoriteFood());
+    });
+    // "Your favorite food is apples"
+
+    setFavoriteFood("mangoes");
+    // "Your favorite food is mangoes"
+    setFavoriteFood("peaches");
+    // "Your favorite food is peaches"
+    setFavoriteFood("bananas");
+    // "Your favorite food is bananas"
+    handle.stop();
+    setFavoriteFood("cake");
+    // (nothing printed)
+
+.. code-block:: javascript
+
+    <template name="weather">
+      The weather here is {{forecast}}!
+    </template>
+
+    // In app.js
+    Template.weather.forecast = function () {
+      return forecasts.get("san-francisco");
+    };
+
 References
 ----------
+https://www.meteor.com/learn-meteor
 http://docs.meteor.com/
+http://manual.meteor.com/
 https://github.com/meteor/meteor/tree/devel/packages/spacebars
+
+
+http://webdesignledger.com/
+http://www.hongkiat.com/blog/web-design-trends-2014/
+http://www.unheap.com/section/inputs-forms/page/2/
+http://codepen.io/tag/svg/
+http://webtoolsdepot.com/
+
+
