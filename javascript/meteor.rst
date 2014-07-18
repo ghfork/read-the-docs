@@ -226,6 +226,43 @@ Create ``Dependency`` object.
     // Prints "Updating"
     // Page now says "The weather in Chicago is CLOUDY."
 
+    settings.set("city", "Tokyo");
+    // Prints "Updating"
+    // Page updates to "The weather in Tokyo is SUNNY."
+    
+    forecasts.set("Tokyo", "wet");
+    // Prints "Updating"
+    // Page updates to "The weather in Tokyo is WET."
+    
+    forecasts.set("Chicago", "warm");
+    // Does *not* print "Updating"
+    // No work is done
+    
+Autoruns Can Be Nested Inside Autoruns
+
+.. code-block:: javascript
+
+    var weather = new ReactiveDict;
+    
+    weather.set("sky", "sunny");
+    weather.set("temperature", "cool");
+    
+    var weatherPrinter = Deps.autorun(function () {
+      console.log("The sky is " + weather.get("sky"));
+      var temperaturePrinter = Deps.autorun(function () {
+        console.log("The temperature is " + weather.get("temperature"));
+      });
+    });
+    // "The sky is sunny"
+    // "The temperature is cool"
+    
+    weather.set("temperature", "hot");
+    // "The temperature is hot"
+    
+    weather.set("sky", "stormy");
+    // The sky is stormy
+    // The temperature is hot
+
 References
 ----------
 https://www.meteor.com/learn-meteor
