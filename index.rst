@@ -25,6 +25,13 @@ Contents:
     tools/tools
     resources/resources
 
+
+https://www.indiegogo.com/
+
+https://www.kickstarter.com/
+
+http://www.inewidea.com/
+
 .. Indices and tables
    ==================
    * :ref:`genindex`
