@@ -62,4 +62,9 @@ Private Variables:
        this.lastname = last;
        this.age = age;
        var bankBalance = 7500;
-    };
+      
+       this.getBalance = function() {
+          // your code should return the bankBalance
+          return bankBalance;
+       };
+    }
