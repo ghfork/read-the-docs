@@ -53,3 +53,13 @@ Prototype:
     // set its prototype to be a new instance of Animal
     Penguin.prototype = new Animal();
 
+Private Variables:
+
+.. code-block:: javascript
+
+    function Person(first,last,age) {
+       this.firstname = first;
+       this.lastname = last;
+       this.age = age;
+       var bankBalance = 7500;
+    };
