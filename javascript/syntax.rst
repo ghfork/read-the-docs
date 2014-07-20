@@ -53,7 +53,7 @@ Prototype:
     // set its prototype to be a new instance of Animal
     Penguin.prototype = new Animal();
 
-Private Variables:
+Private Variables and Methods:
 
 .. code-block:: javascript
 
@@ -63,8 +63,12 @@ Private Variables:
        this.age = age;
        var bankBalance = 7500;
       
-       this.getBalance = function() {
-          // your code should return the bankBalance
+       var returnBalance = function() {
           return bankBalance;
        };
+           
+       // create the new function here
+       this.askTeller = function() {
+            return returnBalance;   
+        }
     }
