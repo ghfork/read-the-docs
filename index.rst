@@ -18,6 +18,7 @@ Contents:
     web/html
     web/css
     javascript/javascript
+    c/c
     vim/vim
     emacs/emacs
     editors/sublime
