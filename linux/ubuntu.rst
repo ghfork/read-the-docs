@@ -20,7 +20,7 @@ Samba Settings
     $ smbclient //xxx.xxx.xxx.xxx/share -U name
     $ sudo mount -t //xxx.xxx.xxx.xxx/share /mnt/mount_point -o username=name,workgroup=group,sec=ntlmv2
 
-開機自動 mount 的方法，在 /etc/fstab 裡加上：
+開機自動 mount 的方法，在 ``/etc/fstab`` 裡加上：
 
 .. code-block:: bash
 
@@ -29,7 +29,7 @@ Samba Settings
 
 ps: if plaintext, use ``sec=lanman`` .
 
-In /etc/samba/s
+In ``/etc/samba/smb.conf``
 
 .. code-block:: bash
 
@@ -172,7 +172,7 @@ Filter
 ``o`` Other-Filter (ignore case)
 ``O`` Case sensitive
 
-ex: COMMAND=simv
+ex: ``COMMAND=simv``
 
 Useful Packages
 ===============
