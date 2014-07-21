@@ -3,9 +3,13 @@ C
 
 Read Configs
 
-xxx_1   10
-xxx_2   15
-xxx_3   20
+.. code-block:: c
+    
+    // ex: "my_config.cfg"
+
+    xxx_1   10
+    xxx_2   15
+    xxx_3   20
 
 .. code-block:: c
 
@@ -29,3 +33,5 @@ xxx_3   20
 		    printf("%s %d\n", CfgString, atoi(CfgValue));
 	    }
     }
+
+    fclose(CfgFile);
