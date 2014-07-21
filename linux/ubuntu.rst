@@ -97,6 +97,50 @@ Create central repository::
 SSH Tunnel
 ==========
 
+Home_Computer:
+
+.. code-block:: bash
+
+    apt-get install openssh-server
+    sudo vim /etc/ssh/sshd_config
+
+Add one line:
+``GatewayPorts yes``
+
+.. code-block:: bash
+
+    /etc/init.d/ssh restart
+
+
+Local forward:
+
+Local ( Yourself ) -> Intermediate -> Destination
+On [ Yourself ] type:
+
+.. code-block:: bash
+
+    ssh -[N]L localport:dest_ip:dest_port intermediate_ip
+
+- Connect to Destination via Intermediate
+
+``-N`` : Do not execute remote command  
+``-L`` : Local forward
+
+Remote forward:
+
+Remote -> Intermediate ( Yourself ) -> Destination
+On [ Yourself ] type:
+
+.. code-block:: bash
+
+    ssh -[N]R remoteport:dest_ip:dest_port remote_ip
+
+- Let Remote connect to Destination via Yourself  
+- Note: The Destination can be Yourself
+
+``-R`` : Remote forward
+
+
 Bash Tips
 =========
 
