@@ -278,3 +278,5 @@ http://codepen.io/tag/svg/
 http://webtoolsdepot.com/
 
 https://github.com/awatson1978/meteor-cookbook
+
+https://leanpub.com/meteortutorial/read
