@@ -8,7 +8,9 @@ JavaScript
 .. toctree::
     :maxdepth: 2
     
+    html
     syntax
+    jquery
     meteor
     node
 

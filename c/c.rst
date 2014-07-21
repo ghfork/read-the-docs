@@ -7,9 +7,9 @@ Read Configs
     
     // ex: "my_config.cfg"
 
-    xxx_1   10
-    xxx_2   15
-    xxx_3   20
+    MY_CONFIG_0   10
+    MY_CONFIG_1   15
+    MY_CONFIG_2   20
 
 .. code-block:: c
 
@@ -17,10 +17,8 @@ Read Configs
     char	CfgString[300];
     char	CfgValue[300];
 
+    int     my_cfg_value;
 
-
-    //============================================================================================
-    //============================================================================================
     CfgFile = fopen("my_config.cfg", "r");
 
     if (!CfgFile) {
@@ -31,6 +29,7 @@ Read Configs
 	    {
 		    fscanf(CfgFile, "%s %s", CfgString, CfgValue);
 		    printf("%s %d\n", CfgString, atoi(CfgValue));
+            if  ( !strcmp(CfgString, "MY_CONFIG_0") )  my_cfg_value =  atoi(CfgValue);
 	    }
     }
 
