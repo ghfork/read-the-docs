@@ -20,6 +20,8 @@ HTML
 CSS
 ===
 
+Pseudo selectors:
+
 .. code-block:: css
 
     a:hover {
