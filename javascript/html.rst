@@ -1,3 +1,4 @@
+====
 HTML
 ====
 
@@ -14,3 +15,19 @@ HTML
             <div></div>
         </body>
     </html>
+
+===
+CSS
+===
+
+.. code-block:: css
+
+    a:hover {
+    }
+
+.. code-block:: css
+
+    p:first-child {
+    }
+    p:nth-child(2) {
+    }
