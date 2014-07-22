@@ -21,3 +21,41 @@ Ex: Jump to 6*5 line:
 
     :<C-R>=6*5<CR><CR>
 
+Generate numbers:
+
+.. code-block:: vim
+
+    :put=range(0, 15)
+    " format numbers
+    :put=map(range(1,150), 'printf(''%04d'', v:val)')
+    " use for loop
+    :for i in range(1,10) | put ='192.168.0.'.i | endfor
+    " subsitute method
+    :let i=100 | :%s/abc/\='xyz_' . Inc(5)/g
+
+EX commands:
+
+.. code-block:: vim
+
+    expand()
+    shellescape()
+    call
+    visualmode()
+    winnr()
+    wincmd w
+    deepcopy()
+
+Options:
+
+.. code-block:: vim
+
+    operatorfunc
+
+If a Vimscript variable refers to a function it must start with a capital letter.
+
+.. code-block:: vim
+
+    :let Myfunc = function("Append")
+    :echo Myfunc([1, 2], 3)
+
+http://learnvimscriptthehardway.stevelosh.com/
