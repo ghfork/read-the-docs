@@ -152,6 +152,18 @@ System Information:
     cat /etc/system-release
     lshw
 
+Clip:
+
+.. code-block:: bash
+
+    $ xclip -sel clip < yourfile
+
+Generate SSH Keys:
+
+.. code-block:: bash
+
+    $ ssh-keygen -t rsa -C "your_email@example.com"
+
 top
 ---
 

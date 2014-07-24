@@ -14,6 +14,24 @@ PaaS ( Platform as a Service )
 * `Openshift <https://www.openshift.com/>`_
 * `Heroku <https://www.heroku.com/>`_
 
+.. code-block:: bash
+
+    $ heroku plugins:install git://github.com/ddollar/heroku-accounts.git
+
+    $ heroku accounts:add personal
+
+    Add the following to your ~/.ssh/config
+
+    Host heroku.personal
+        HostName heroku.com
+        IdentityFile /PATH/TO/PRIVATE/KEY
+        IdentitiesOnly yes
+
+    $ heroku accounts:default personal
+
+    # in project root
+    $ heroku accounts:set personal
+
 Cloud Development
 =================
 
