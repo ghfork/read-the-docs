@@ -193,6 +193,7 @@ Programming
 -----------
 
 python-pip
+mongo-db
 
 Utils
 -----

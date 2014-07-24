@@ -19,6 +19,7 @@ Contents:
     web/css
     javascript/javascript
     c/c
+    database/mongo
     vim/vim
     emacs/emacs
     editors/sublime
