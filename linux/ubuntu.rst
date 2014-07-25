@@ -17,8 +17,14 @@ Samba Settings
 
 .. code-block:: bash
     
-    $ smbclient //xxx.xxx.xxx.xxx/share -U name
-    $ sudo mount -t //xxx.xxx.xxx.xxx/share /mnt/mount_point -o username=name,workgroup=group,sec=ntlmv2
+    $ smbclient ////xxx.xxx.xxx.xxx/share -U <username> -W <workgroup>
+    $ sudo mount -t //xxx.xxx.xxx.xxx/share /mnt/mount_point -o username=name,workgroup=group,sec=ntlmv2,uid=1000
+
+Unmount:
+
+.. code-block:: bash
+
+    $ umount <mount>
 
 開機自動 mount 的方法，在 ``/etc/fstab`` 裡加上：
 
@@ -94,6 +100,21 @@ Create central repository::
 
     git init --bare <directory> # create central repository
 
+Show tracked files::
+
+   git ls-tree -r master --name-only 
+
+Remove all history::
+
+    rm -rf .git
+
+    git init
+    git add .
+    git commit
+
+    git remote add origin <git-repo>
+    git push -u --force origin master
+
 SSH Tunnel
 ==========
 
@@ -151,6 +172,7 @@ System Information:
     uname -a
     cat /etc/system-release
     lshw
+    lspci
 
 Clip:
 
@@ -198,6 +220,8 @@ mongo-db
 Utils
 -----
 
+unity-tweak-tool
+
 qalculate
     圖形化界面計算機
 
@@ -216,4 +240,5 @@ fonts-wqy-zenhei
 htop
     一個比較好用的 top !
 
-
+xclip
+    剪貼簿
