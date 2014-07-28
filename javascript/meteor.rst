@@ -2,7 +2,6 @@
 Meteor
 ======
 
-
 .. code-block:: bash
 
     $ sudo -H npm install -g meteorite
@@ -11,6 +10,21 @@ Meteor
     $ meteor add jquery
     $ mrt add iron-router
     $ mrt add jquery-ui
+
+Iron Router
+-----------
+
+.. code-block:: javascript
+
+    Router.configure({
+        layoutTemplate: 'layout'
+    })
+
+    Router.map(function(){
+        this.route('home', {path: '/'});
+        this.route('about', {path: '/about'});
+        this.route('builder', {path: '/builder'});
+    })
 
 General Usage
 -------------
@@ -290,3 +304,4 @@ http://webtoolsdepot.com/
 https://github.com/awatson1978/meteor-cookbook
 
 https://leanpub.com/meteortutorial/read
+http://atmospherejs.com/docs/installing
