@@ -166,6 +166,7 @@ Bash Tips
 =========
 
 System Information:
+-------------------
 
 .. code-block:: bash
 
@@ -175,16 +176,37 @@ System Information:
     lspci
 
 Clip:
+-----
 
 .. code-block:: bash
 
     $ xclip -sel clip < yourfile
 
 Generate SSH Keys:
+------------------
 
 .. code-block:: bash
 
     $ ssh-keygen -t rsa -C "your_email@example.com"
+
+Find files:
+-----------
+
+.. code-block:: bash
+   
+    # find file
+    $ locate
+    # update database
+    $ sudo updatedb
+
+    # find command
+    $ which
+    $ whereis
+
+
+.. code-block:: bash
+   
+    $ find -type d -maxdepth 1 -ls
 
 top
 ---

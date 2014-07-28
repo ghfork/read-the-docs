@@ -58,4 +58,23 @@ If a Vimscript variable refers to a function it must start with a capital letter
     :let Myfunc = function("Append")
     :echo Myfunc([1, 2], 3)
 
+Paths:
+
+.. code-block:: vim
+    
+    " relative path
+    :echom expand('%')
+    " absolute path
+    :echom expand('%:p')
+    " absolute path of file in current directory
+    :echom fnamemodify('foo.txt', ':p')
+
+Listing Files:
+
+.. code-block:: vim
+
+    :echo split(globpath('.', '*'), '\n')
+    
+
+Reference:  
 http://learnvimscriptthehardway.stevelosh.com/

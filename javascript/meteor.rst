@@ -2,6 +2,13 @@
 Meteor
 ======
 
+
+.. code-block:: bash
+
+    $ meteor add bootstrap
+    $ meteor add jquery
+
+
 General Usage
 -------------
 
