@@ -5,9 +5,12 @@ Meteor
 
 .. code-block:: bash
 
+    $ sudo -H npm install -g meteorite
+    
     $ meteor add bootstrap
     $ meteor add jquery
-
+    $ mrt add iron-router
+    $ mrt add jquery-ui
 
 General Usage
 -------------
