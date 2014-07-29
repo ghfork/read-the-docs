@@ -1,3 +1,59 @@
+List Files in Directory
+=======================
+
+..code-block:: python 
+
+    # for file in directory
+    http://stackoverflow.com/questions/3964681/find-all-files-in-directory-with-extension-txt-with-python
+    ## glob
+    import glob
+    import os
+    os.chdir("/mydir")
+    for file in glob.glob("*.txt"):
+        print file
+
+    ## version2
+    >>> import glob
+    >>> glob.glob('./*.txt')
+    ['./outline.txt', './pip-log.txt', './test.txt', './testingvim.txt']
+
+    ## os.listdir
+    import os
+    for file in os.listdir("/mydir"):
+        if file.endswith(".txt"):
+            print file
+
+    ## traverse directory
+    import os
+    for root, dirs, files in os.walk("/mydir"):
+        for file in files:
+            if file.endswith(".txt"):
+                 print os.path.join(root, file)
+
+Process CSV files
+=================
+
+v2.7
+
+.. code-block:: python
+
+    import csv
+
+    # write file
+    with open('test.csv', 'w') as f:
+        writer = csv.writer(f)
+        writer.writerow(['row1', 5, 10, 15])
+        writer.writerow(['row2', 3, 6, 9])
+        writer.writerow(['row3', 2, 4, 6])
+
+    # read file
+    with open('test.csv', 'r') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            print row[0] + '\t' + row[1]
+
+https://docs.python.org/2.7/library/csv.html
+
 ==================
 Regular Expression
 ==================
