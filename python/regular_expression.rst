@@ -1,7 +1,7 @@
 List Files in Directory
 =======================
 
-..code-block:: python 
+.. code-block:: python 
 
     # for file in directory
     http://stackoverflow.com/questions/3964681/find-all-files-in-directory-with-extension-txt-with-python
@@ -54,7 +54,6 @@ v2.7
 
 https://docs.python.org/2.7/library/csv.html
 
-==================
 Regular Expression
 ==================
 
