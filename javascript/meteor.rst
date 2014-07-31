@@ -287,6 +287,24 @@ Autoruns Can Be Nested Inside Autoruns
     // The sky is stormy
     // The temperature is hot
 
+Deploy Meteor to Heroku
+-----------------------
+
+.. code-block:: bash
+
+    $ meteor create <app_name>
+    $ cd <app_name>
+    $ git init
+    $ heroku create --stack cedar --buildpack https://github.com/revetice/heroku-buildpack-meteorite.git
+
+    # with accounts plugin
+    $ heroku accounts:set <account>
+
+    $ heroku config:set ROOT_URL=<http://domain.com>
+    $ heroku config:set MONGO_URL=<>
+
+    $ git push heroku master
+
 References
 ----------
 https://www.meteor.com/learn-meteor

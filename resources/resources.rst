@@ -2,8 +2,8 @@
 Resources
 =========
 
-Git
-===
+Git Repositories
+================
 
 * `Github <https://github.com/>`_
 * `Bitbucket <https://bitbucket.org/>`_
@@ -32,22 +32,6 @@ PaaS ( Platform as a Service )
     # in project root
     $ heroku accounts:set personal
 
-Deploy Meteor to Heroku:
-
-.. code-block:: bash
-
-    $ meteor create <app_name>
-    $ cd <app_name>
-    $ git init
-    $ heroku create --stack cedar --buildpack https://github.com/revetice/heroku-buildpack-meteorite.git
-
-    # with accounts plugin
-    $ heroku accounts:set <account>
-
-    $ heroku config:set ROOT_URL=<http://domain.com>
-    $ heroku config:set MONGO_URL=<>
-
-    $ git push heroku master
 
 Cloud Development
 =================
@@ -65,5 +49,6 @@ Tutorials
 * `Django Tutorials <https://docs.djangoproject.com/en/dev/intro/tutorial01/>`_
 
 Meteor
+
 https://www.meteor.com/learn-meteor/
 http://docs.meteor.com/
