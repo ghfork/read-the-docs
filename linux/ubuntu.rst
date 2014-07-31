@@ -115,6 +115,10 @@ Remove all history::
     git remote add origin <git-repo>
     git push -u --force origin master
 
+Show all files::
+
+    git ls-tree --full-tree --name-only -r HEAD 
+
 SSH Tunnel
 ==========
 
