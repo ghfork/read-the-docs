@@ -11,7 +11,7 @@ Contents:
 .. toctree::
     :maxdepth: 2
 
-    linux/ubuntu
+    linux/linux
     verilog/verilog
     python/python
     python/django
