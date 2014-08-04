@@ -8,3 +8,4 @@ Linux
 
     ubuntu
     bash
+    git
