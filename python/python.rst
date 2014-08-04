@@ -7,3 +7,5 @@ Python
     
     syntax
     sphinx
+    ipython
+    tricks
