@@ -2,7 +2,28 @@
 Vim
 ===
 
-整理 code 的好幫手:
+Indent curly-braces:
+    
+    Put cursor on one of the curly braces. Press ``>%``
+
+Show mappings:
+
+.. code-block:: vim
+
+    :nmap
+    :vmap
+    :imap
+
+Convert spaces into tabs
+
+.. code-block:: vim
+
+    :set tabstop=4
+    :set noexpandtab
+    :%retab!
+    :set list " show tabs in visual way
+
+Create column structure for data:
 
 .. code-block:: vim
 
@@ -20,6 +41,7 @@ Ex: Jump to 6*5 line:
 .. code-block:: vim
 
     :<C-R>=6*5<CR><CR>
+
 
 Generate numbers:
 
