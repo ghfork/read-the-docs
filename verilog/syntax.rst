@@ -37,3 +37,11 @@ Parameters
 
     localparam  SOME_THING  =   value;
 
+Gnerate Random Number
+---------------------
+
+.. code-block:: verilog
+
+    $random % 20    // -19 ~ 19
+    {$random} % 20  // 0 ~ 19
+
