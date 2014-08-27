@@ -16,6 +16,10 @@ PaaS ( Platform as a Service )
 
 .. code-block:: bash
 
+    $ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
+.. code-block:: bash
+
     $ heroku plugins:install git://github.com/ddollar/heroku-accounts.git
 
     $ heroku accounts:add personal
@@ -50,5 +54,9 @@ Tutorials
 
 Meteor
 
-https://www.meteor.com/learn-meteor/
+https://www.meteor.com/learn-meteor/  
 http://docs.meteor.com/
+
+Asciinema
+
+https://asciinema.org/

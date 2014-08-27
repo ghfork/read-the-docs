@@ -18,6 +18,7 @@ Show config::
 
 Edit config::
 
+    git config --global core.editor vim
     git config -e
 
 Switch protocol::
