@@ -2,32 +2,34 @@
 Git
 ===
 
-Simple work flow::
+Simple work flow:
 
-    git config --global user.email "you@example.com"
-    git config --global user.name "Your Name"
-    git init
-    git add .
-    git commit
-    git remote add origin https://xxx/xxx.git
-    git push -u origin master
+.. code-block:: bash
 
-Show config
+    $ git init
+    $ git add .
+    $ git commit
+    $ git remote add origin https://xxx/xxx.git
+    $ git push -u origin master
+
+Configurations:
 
 .. code-block:: bash
     
+    # first time set
+    $ git config --global user.email "you@example.com"
+    $ git config --global user.name "Your Name"
+
     # show configs
-    git config -l
+    $ git config -l
+    # edit configs
+    $ git config -e
 
-Edit config::
+    # change editor
+    $ git config --global core.editor vim
 
-    git config --global core.editor vim
-    git config -e
-
-Switch protocol::
-
-    git config remote.origin.url git@github.com:xxxx/xxxx
-
+    # switch protocol
+    $ git config remote.origin.url git@github.com:xxxx/xxxx
 
 Add new repository::
 
