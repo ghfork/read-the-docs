@@ -201,3 +201,6 @@ htop
 
 xclip
     剪貼簿
+
+meld
+    diff tool

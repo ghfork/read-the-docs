@@ -12,8 +12,11 @@ Simple work flow::
     git remote add origin https://xxx/xxx.git
     git push -u origin master
 
-Show config::
+Show config
 
+.. code-block:: bash
+    
+    # show configs
     git config -l
 
 Edit config::
@@ -83,6 +86,14 @@ Unmodifying a Modified File
 .. code-block:: bash
     
     $ git checkout -- file.txt
+
+Diff
+
+.. code-block:: bash
+    
+    $ git diff HEAD -- path/to/file
+    $ git diff --stat
+    
 
 http://git-scm.com/book/en/Git-Basics-Undoing-Things
 
