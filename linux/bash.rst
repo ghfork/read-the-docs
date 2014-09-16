@@ -9,3 +9,15 @@ Loop:
     do
         echo $i
     done
+
+Change case:
+
+.. code-block:: bash
+
+    x="abc"
+    x=${x^^}
+    # abc -> ABC
+
+    y="ABC"
+    y=${y,,}
+    # ABC -> abc
