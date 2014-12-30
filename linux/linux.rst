@@ -9,3 +9,4 @@ Linux
     ubuntu
     bash
     git
+    cvs

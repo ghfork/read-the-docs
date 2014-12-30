@@ -34,3 +34,11 @@ Read Configs
     }
 
     fclose(CfgFile);
+
+.. code-block:: c
+
+    typedef union single_fp
+    {
+	    DWORD   dwData;
+	    float   fpData;
+    } FloatFP;

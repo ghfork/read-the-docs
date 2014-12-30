@@ -95,6 +95,12 @@ Diff
     
     $ git diff HEAD -- path/to/file
     $ git diff --stat
+
+Add only modified files
+
+.. code-block:: bash
+
+    $ git add -u
     
 
 http://git-scm.com/book/en/Git-Basics-Undoing-Things
