@@ -20,7 +20,7 @@ Contents:
     web/css
     javascript/javascript
     c/c
-    database/mongo
+    database/database
     vim/vim
     emacs/emacs
     editors/sublime
