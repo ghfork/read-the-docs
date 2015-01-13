@@ -8,5 +8,6 @@ Linux
 
     ubuntu
     bash
+    zsh
     git
     cvs
