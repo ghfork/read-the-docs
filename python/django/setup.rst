@@ -29,36 +29,6 @@ Migration
 
     python manage.py migrate
 
-Admin
------
-
-.. code-block:: bash
-
-    $ python manage.py createsuperuser
-
-Register:
-
-.. code-block:: python
-
-    from django.contrib import admin
-    from polls.models import Question
-
-    # Optional:
-    # class ChoiceInline(admin.StackedInline):
-    class ChoiceInline(admin.TabularInline):
-        model = Choice
-        extra = 3
-
-    class QuestionAdmin(admin.ModelAdmin):
-        # fields = ['pub_date', 'question_text']
-        fieldsets = [
-            (None,                  {'fields': ['question_text']}),
-            ('Date information',    {'fields': ['pub_date'], 'classes': ['collapse']}),
-        ]
-        inlines = [ChoiceInline]
-
-    admin.site.register(Question[, QuestionAdmin])
-
 API
 ---
 
@@ -101,3 +71,25 @@ Use Postgre
         }
 
     python manage.py syncdb
+
+Templates
+---------
+
+mkdir templates
+
+Add in project/settings.py:
+
+TEMPLATE_DIRS = [os.path.join(BASE_DIR), 'templates']
+
+cp venv/local/lib/python2.7/site-packages/django/contrib/admin/templates/admin/base_site.html
+
+Find django path
+----------------
+
+.. code-block:: bash
+
+    $ python -c "
+    import sys
+    sys.path = sys.path[1:]
+    import django
+    print(django.__path__)"

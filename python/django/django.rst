@@ -6,3 +6,7 @@ Django
 
     setup
     model
+    view
+    template
+    admin
+    url
