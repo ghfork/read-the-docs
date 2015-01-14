@@ -15,7 +15,7 @@ Contents:
     linux/linux
     verilog/verilog
     python/python
-    python/django
+    python/django/django
     web/html
     web/css
     javascript/javascript
