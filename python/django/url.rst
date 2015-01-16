@@ -11,6 +11,9 @@ vim app/urls.py
 
     urlpatterns = patterns('',
 	    url(r'^$', views.index, name='index'),
+	    url(r'^(?P<question_id>\d+)/$', views.detail, name='detail'),
+	    url(r'^(?P<question_id>\d+)/results/$', views.results, name='results'),
+	    url(r'^(?P<question_id>\d+)/vote/$', views.vote, name='vote'),
     )
 
 In project/urls.py, add:
@@ -22,6 +25,6 @@ In project/urls.py, add:
         # url(r'^$', 'practice.views.home', name='home'),
         # url(r'^blog/', include('blog.urls')),
         # Add this
-	    url(r'^polls/', include('polls.urls')),
+	    url(r'^polls/', include('polls.urls', namespace="polls")),
         url(r'^admin/', include(admin.site.urls)),
     )

@@ -10,3 +10,5 @@ Django
     template
     admin
     url
+    test
+    structure
