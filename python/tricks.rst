@@ -8,3 +8,5 @@ Clear list:
     a[0:len(a)]
     a[:] = []
     del a[:]
+
+pip install -r requirements.txt
