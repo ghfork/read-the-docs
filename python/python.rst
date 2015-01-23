@@ -10,3 +10,4 @@ Python
     sphinx
     ipython
     tricks
+    os
