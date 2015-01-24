@@ -10,3 +10,15 @@ Clear list:
     del a[:]
 
 pip install -r requirements.txt
+
+List all modules
+
+.. code-block:: python
+    
+    >>> help(modules)
+
+List module functions
+
+.. code-block:: python
+    
+    >>> dir(modulename)
