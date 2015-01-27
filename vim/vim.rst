@@ -96,7 +96,29 @@ Listing Files:
 .. code-block:: vim
 
     :echo split(globpath('.', '*'), '\n')
+
+Use Python:
+
+.. code-block:: vim
     
+    :pydo
+
+    " Create python function
+    function! Pytest()
+
+    python << EOF
+
+    import vim
+
+    b = vim.current.buffer
+    b.append("asdf")
+
+    print "this is generated from python"
+
+    EOF
+
+    endfunction
+
 
 Reference:  
 http://learnvimscriptthehardway.stevelosh.com/
