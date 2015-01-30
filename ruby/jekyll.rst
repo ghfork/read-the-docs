@@ -8,4 +8,5 @@ Jekyll
     $ jekyll new project
 
     $ jekyll serve
+    $ jekyll serve --drafts
 
