@@ -119,6 +119,19 @@ Use Python:
 
     endfunction
 
+Conditional match
+
+.. code-block:: vim
+
+    " "foo" in "foobar"
+    /foo\(bar\)\@=
+
+    " any "foo" not followed by "bar"
+    /foo\(bar\)\@!
+
+    " any "bar" that's not in "foobar"
+    /\(foo\)\@<!bar
+
 
 Reference:  
 http://learnvimscriptthehardway.stevelosh.com/

@@ -17,6 +17,7 @@ Contents:
     python/python
     python/django/django
     ruby/ruby
+    node.js/node.js
     web/html
     web/css
     javascript/javascript
