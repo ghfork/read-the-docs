@@ -167,6 +167,12 @@ Filter
 
 ex: ``COMMAND=simv``
 
+
+curl
+----
+
+    curl -O -J -L $url
+
 Useful Packages
 ===============
 
