@@ -72,3 +72,31 @@ Arch
 
     # exit
     # reboot
+
+Network
+-------
+
+.. code-block:: bash
+
+    # lspci -v
+    // find something like "Ethernet Controller"
+
+    # dmesg | grep <module_name>
+
+    # ls /sys/class/net
+
+    # ip link set <module_name> up
+    # ip link show dev <module_name>
+
+    # dhcpd <module_name>
+
+https://wiki.archlinux.org/index.php/Network_configuration
+
+https://wiki.archlinux.org/index.php/Systemd-networkd#Basic_DHCP_network
+
+
+Install Packages
+----------------
+
+pacman -S gvim  
+pacman -S git
