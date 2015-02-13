@@ -73,6 +73,10 @@ Arch
     # exit
     # reboot
 
+    // add user
+    # useradd -m -G wheel -s /bin/bash archie
+    # passwd [username]
+
 Network
 -------
 
@@ -100,3 +104,14 @@ Install Packages
 
 pacman -S gvim  
 pacman -S git
+pacman -S openssh
+pacman -S xorg-server
+pacman -S xorg-xinit
+
+$ pacman -Ss xf86-video
+// default
+$ pacman -S xf86-video-vesa
+
+
+pacman -S konsole
+pacman -S plasma

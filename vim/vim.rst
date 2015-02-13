@@ -135,3 +135,7 @@ Conditional match
 
 Reference:  
 http://learnvimscriptthehardway.stevelosh.com/
+
+:h quickref
+
+:options " show all set options

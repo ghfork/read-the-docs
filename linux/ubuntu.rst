@@ -210,3 +210,5 @@ xclip
 
 meld
     diff tool
+
+screen
