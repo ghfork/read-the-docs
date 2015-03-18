@@ -1,3 +1,5 @@
+Setup
+=====
 
 .. code-block:: bash
 
