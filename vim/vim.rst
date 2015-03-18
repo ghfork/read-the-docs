@@ -132,6 +132,27 @@ Conditional match
     " any "bar" that's not in "foobar"
     /\(foo\)\@<!bar
 
+Removing blank lines
+
+.. code-block:: vim
+
+    :g/^$/d
+
+Change split
+
+.. code-block:: vim
+
+    " Horizontal to Vertical
+    <C-W>t<C-W>H
+    " Vertical to Horizontal
+    <C-W>t<C-W>K
+
+Command Line Editing
+
+.. code-block:: bash
+    
+    # in CMD
+    $ <C-X><C-E>
 
 Reference:  
 http://learnvimscriptthehardway.stevelosh.com/

@@ -5,5 +5,6 @@ RUBY
     :maxdepth: 2
 
     setup
+    syntax
     jekyll
 
