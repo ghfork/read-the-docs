@@ -45,6 +45,9 @@ fruits.each { |fruit| puts "fruit" }
 	puts "#{i}"
 end
 
+# while
+while i < 6
+end
 
 # File
 file = open("sample.txt", 'r')
