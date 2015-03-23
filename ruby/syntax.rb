@@ -49,6 +49,10 @@ end
 while i < 6
 end
 
+#
+loop do
+end
+
 # File
 file = open("sample.txt", 'r')
 
@@ -115,6 +119,8 @@ end
 # random
 srand([seed])
 rand([max=0])
+
+XXX.sort_by(rand)
 
 # Variable types
 $global_variable
