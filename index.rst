@@ -28,6 +28,7 @@ Contents:
     editors/sublime
     windows/windows
     tools/tools
+    tmux/tmux
     resources/resources
 
 
