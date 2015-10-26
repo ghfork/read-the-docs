@@ -101,7 +101,18 @@ Add only modified files
 .. code-block:: bash
 
     $ git add -u
+
+Show log
+
+.. code-block:: bash
     
+    $ git log --oneline --all --graph --decorate
+
+Create branch
+
+.. code-block:: bash
+    
+    $ git checkout -b <branch_name>
 
 http://git-scm.com/book/en/Git-Basics-Undoing-Things
 
